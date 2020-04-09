@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="tabris-plugin-gcm-heartbeat"
-        version="0.1.0">
+        version="1.0.0">
 
   <name>Tabris.js GCM Heartbeat Plugin</name>
   <description>Refresh the connection with the GCM service to ensure timely arrival of push notifications.</description>
@@ -16,14 +16,14 @@
   </js-module>
 
   <platform name="android">
-    <source-file src="src/android/com/eclipsesource/tabris/gcm/heartbeat/GCMHeartbeatOperator.kt"
+    <source-file src="src/android/com/eclipsesource/tabris/gcm/heartbeat/GCMHeartbeatHandler.kt"
                  target-dir="src/com/eclipsesource/tabris/gcm/heartbeat" />
     <source-file src="src/android/com/eclipsesource/tabris/gcm/heartbeat/GCMHeartbeat.kt"
                  target-dir="src/com/eclipsesource/tabris/gcm/heartbeat" />
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
       <meta-data
-          android:name="com.eclipsesource.tabris.android.OPERATOR.com.eclipsesource.tabris.gcm.heartbeat.GCMHeartbeatOperator"
-          android:value="com.eclipsesource.tabris.gcm.heartbeat.GCMHeartbeatOperator" />
+          android:name="com.eclipsesource.tabris.android.HANDLER.com.eclipsesource.tabris.gcm.heartbeat.GCMHeartbeatHandler"
+          android:value="com.eclipsesource.tabris.gcm.heartbeat.GCMHeartbeatHandler" />
     </config-file>
   </platform>
 

@@ -1,7 +1,7 @@
-import {ui} from 'tabris';
+import {contentView, Button} from 'tabris';
 
-ui.contentView.append(
-  <button
+contentView.append(
+  <Button
     centerX={0} centerY={0}
     text='Send GCM Heartbeat'
     onSelect={() => esgcmheartbeat.sendHeartbeat()} />

@@ -1,10 +1,10 @@
 {
   "name": "tabris-plugin-gcm-heartbeat",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Refresh the connection with the GCM service to ensure timely arrival of push notifications.",
   "types": "./types/index.d.ts",
   "peerDependencies": {
-    "tabris": "~2.6.0"
+    "tabris": "~3.4.0"
   },
   "cordova": {
     "id": "tabris-plugin-gcm-heartbeat",
@@ -16,12 +16,13 @@
     "type": "git",
     "url": "git+https://github.com/eclipsesource/tabris-plugin-gcm-heartbeat.git"
   },
-  "engines": [
-    {
-      "name": "cordova",
-      "version": ">=3.8.0"
+  "engines": {
+    "cordovaDependencies": {
+      "5.0.0": {
+        "cordova-android": ">=8.0.0"
+      }
     }
-  ],
+  },
   "author": "EclipseSource",
   "license": "Revised BSD License (3-clause license)",
   "bugs": {
