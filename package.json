@@ -4,7 +4,7 @@
   "description": "Refresh the connection with the GCM service to ensure timely arrival of push notifications.",
   "types": "./types/index.d.ts",
   "peerDependencies": {
-    "tabris": "~3.4.0"
+    "tabris": "^3.9.0-dev"
   },
   "cordova": {
     "id": "tabris-plugin-gcm-heartbeat",
